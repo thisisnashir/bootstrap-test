@@ -28,7 +28,7 @@
 
 ## About the Project
 
-We are gonna make a simple webpage with Bootstrap and learn the basics of it.
+We are gonna make a simple webpage with Bootstrap and learn the basics of it. Note that, we will be using bootstrap 4.5 for his tests.
 ## Built With
 
 The project will be built with:
@@ -172,6 +172,12 @@ which gives us the following look.
     <img src="./readmeResources/navbar-intial-look.png" alt="Navbar initial look">
 </p>
 
+We reset the navbar to default color and observe that texts are right aligned.
+
+<p align="center">
+    <img src="./readmeResources/bootstrap-mr-auto.png" alt="Bootstrap right aligned">
+</p>
+
 Now to take the text to the write we change the following snippet:
 
 ```html
@@ -184,3 +190,7 @@ to the following:
 ```
 
 here `ml-auto` makes it right aligned.
+
+<p align="center">
+    <img src="./readmeResources/bootstrap-ml-auto.png" alt="Bootstrap left aligned">
+</p>
