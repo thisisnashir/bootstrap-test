@@ -112,3 +112,75 @@ But when we are using online bootstrap in our project, we just need to lin the c
 
 
 ## Adding Navbar
+
+We search Navbar in bootstrap website and select the starter template and paste it.
+
+We see the first line of our navbar is:
+
+```html
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+```
+
+here `bg-light` is the background color of the navbar and `navbar-light` is the text's color, both of which we can change by replacing the suffixes.
+
+<p align="center">
+    <img src="./readmeResources/navbar-default.png " alt="navbar default" >
+</p>
+
+We can change `bg-light` to `bg-dark` and `navbar-light` to `navbar-light` and we will see a light colored text on a dark background.
+
+<p align="center">
+    <img src="./readmeResources/navbar-changed.png " alt="navbar changed" >
+</p>
+
+Another color extension is `*-success` (`navbar-success`, `bg-success`), `*-primary`,`*-warning` etc.
+
+We edit the navbar to give an initial look.
+
+```html
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Bootstrap Test</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link " href="#">Contact</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+```
+which gives us the following look.
+
+<p align="center">
+    <img src="./readmeResources/navbar-intial-look.png" alt="Navbar initial look">
+</p>
+
+Now to take the text to the write we change the following snippet:
+
+```html
+<ul class="navbar-nav mr-auto">
+```
+to the following:
+
+```html
+<ul class="navbar-nav ml-auto">
+```
+
+here `ml-auto` makes it right aligned.
